@@ -1,0 +1,24 @@
+{
+  "name": "puppeteer-with-puppets",
+  "version": "1.0.0",
+  "description": "puppets and more puppets and less browsers",
+  "keywords": [
+    "jani",
+    "patrik",
+    "anya"
+  ],
+  "license": "ISC",
+  "author": "jani",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "puppeteer": "^25.13.0"
+  },
+  "allowScripts": {
+    "puppeteer": true
+  }
+}

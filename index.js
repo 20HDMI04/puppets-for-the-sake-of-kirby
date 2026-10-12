@@ -1,10 +1,9 @@
 const puppeteer = require("puppeteer");
 
-async function Lajos() {
+async function Scrape() {
 	const browser = await puppeteer.launch();
 	const page = await browser.newPage();
 
-	// Navigate the page to a URL.
 	await page.goto("https://wikirby.com/wiki/Kirby_no_Copy-toru!#List_of_cards");
 	await page.setViewport({ width: 1080, height: 1024 });
 
@@ -20,8 +19,12 @@ async function Lajos() {
 			}),
 	);
 
-	console.log(tableData);
+	const fullString = tableData[0];
+	const re = /(\n|\<tr.*\>)/g;
+	let trs = fullString.replaceAll(re, "").split("</tr>");
+
+	console.log(trs);
 
 	await browser.close();
 }
-Lajos();
+Scrape();

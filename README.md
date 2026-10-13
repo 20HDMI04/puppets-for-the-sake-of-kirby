@@ -1,5 +1,9 @@
 # 🌟 Kirby Card Game Scraper
 
+<p align="center">
+   <img src="logo/thelogokirbypuppeteer.png" alt="Kirby Card Game Scraper logo" width="600">
+</p>
+
 A lightweight and efficient web scraper built with **Node.js** and **Puppeteer** to extract card database information, stats, images, and pricing details for the Kirby card game.
 
 ---
@@ -33,3 +37,4 @@ Ensure you have **Node.js** installed on your machine.
    ```bash
    git clone [https://github.com/your-username/kirby-card-scraper.git](https://github.com/your-username/kirby-card-scraper.git)
    cd kirby-card-scraper
+   ```
